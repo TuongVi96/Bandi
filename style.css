@@ -1,3 +1,6 @@
+header, main, footer{
+    max-width: 1600px;
+}
 .body{
     font-family:'Open Sans', sans-serif;
 }
@@ -5,6 +8,7 @@
     max-width: 1200px;
 }
 nav{
+    max-width: 1600px;
     background-color: #0e2b29;
     height: 70px;
     padding-bottom: 15px;
@@ -43,6 +47,7 @@ nav{
 }
 .banner-item{
     position: relative;
+    height: 800px;
 }
 .banner-text{
     color: white;
@@ -82,35 +87,46 @@ nav{
 .banner-icon i{
     padding-right: 15px;
 }
+.slick-dotted.slick-slider {
+    margin: unset;
+}
 .slick-slider .slick-dots button {
     background: #c6c6c6;
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top:0;
-    text-align: center;
 }
+.banner-slider .slick-dots{
+    display: flex ;
+    flex-direction: column ;
+    align-items: flex-end ;
+    top: 370px;
+} 
 .slick-slider .slick-dots button::before{
     display: none;
 }
 .slick-arrow{
     display: none !important;
 }
-.mod-feature{
+.features-item{
     height: 460px;
     background-color: #f4f7f9;
 }
-.row{
+.features-item .row{
     justify-content: center;
 }
 .features-head{
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 70px;
+}
+.features-head h2{
     font-size: 28px;
     font-weight: bold;
     color: #0eb493;
-    text-align: center;
+}
+.features-head p{
+    opacity: 0.1;
 }
 .features-text h3{
     font-size: 20px;
@@ -119,3 +135,76 @@ nav{
     font-size: 13px;
     padding-right: 45px;
 }
+.mod-works{
+    height: 950px;
+    text-align: center;
+}
+.mod-works .row{
+    justify-content: center;
+}
+.works-head{
+    text-align: center;
+    padding-top: 95px;
+    padding-bottom: 35px;
+}
+.works-head h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: #0eb493;
+}
+.works-head p{
+    opacity: 0.1;
+}
+.works-text p{
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+.works-tab li{
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+    display: inline;
+    padding-bottom: 40px;
+}
+.works-tab a{
+    text-decoration: none;
+    color: black;
+}
+.works-images{
+    max-width: 1600px;
+}
+.works-images .row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.images a :hover{
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.images{
+    padding: 0px; 
+}
+
+.images .image-hover{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #24b89a;
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; */
+}  
+
+
+
